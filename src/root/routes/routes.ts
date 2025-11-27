@@ -5,15 +5,20 @@ import ChartPage from "@pages/ChartPage";
 
 import RoutesEnum from "@shared/enums/routes";
 
-const ROUTES = createBrowserRouter([
+const ROUTES = createBrowserRouter(
+  [
+    {
+      path: RoutesEnum.HOME,
+      Component: HomePage,
+    },
+    {
+      path: RoutesEnum.CHART,
+      Component: ChartPage,
+    },
+  ],
   {
-    path: RoutesEnum.HOME,
-    Component: HomePage,
+    basename: "/frontend-interview-task-master",
   },
-  {
-    path: RoutesEnum.CHART,
-    Component: ChartPage,
-  },
-]);
+);
 
 export default ROUTES;
