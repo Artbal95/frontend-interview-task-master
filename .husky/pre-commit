@@ -1,0 +1,6 @@
+npx lint-staged &&
+echo "✅ Linting successful!" &&
+npm run types &&
+echo "✅ Type checking successful!" &&
+git add . &&
+echo "✅ Added successful!"
