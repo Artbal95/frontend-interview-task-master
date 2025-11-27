@@ -8,6 +8,7 @@ const getPath = (path: string): string => resolve(__dirname, `src/${path}`);
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), svgr()],
+  base: "/frontend-interview-task-master/",
   resolve: {
     alias: {
       "@assets": getPath("assets"),

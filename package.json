@@ -3,6 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Artbal95/frontend-interview-task-master.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -12,7 +16,7 @@
     "preview": "vite preview",
     "prepare": "husky",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -r https://github.com/Artbal95/frontend-interview-task-master.git"
   },
   "dependencies": {
     "@visx/axis": "3.12.0",
