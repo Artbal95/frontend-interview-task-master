@@ -8,7 +8,7 @@ export interface IThemeContext {
 }
 
 const ThemeContext = createContext<IThemeContext>({
-  theme: ThemeEnum.SYSTEM,
+  theme: ThemeEnum.DARK,
   setTheme: () => {},
 });
 
