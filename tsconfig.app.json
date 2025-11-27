@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": false,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
+    /* Paths */
+    "baseUrl": "src",
+    "paths": {
+      "@assets/*": ["assets/*"],
+      "@core/*": ["core/*"],
+      "@modules/*": ["modules/*"],
+      "@widgets/*": ["widgets/*"],
+      "@pages/*": ["pages/*"],
+      "@appTypes/*": ["types/*"],
+      "@shared/components/*": ["shared/components/*"],
+      "@shared/context/*": ["shared/context/*"],
+      "@shared/providers/*": ["shared/providers/*"],
+      "@shared/containers/*": ["shared/containers/*"],
+      "@shared/dialogs/*": ["shared/dialogs/*"],
+      "@shared/entities/*": ["shared/entities/*"],
+      "@shared/enums/*": ["shared/enums/*"],
+      "@shared/hooks/*": ["shared/hooks/*"],
+      "@shared/layouts/*": ["shared/layouts/*"],
+    }
+  },
+  "include": ["src"]
+}

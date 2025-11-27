@@ -1,0 +1,43 @@
+.ChartContainer {
+    position: relative;
+}
+
+.ChartContainerExport {
+    visibility: hidden;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    opacity: 0;
+    transition: opacity 0.3s, box-shadow 0.3s;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+}
+
+.ChartContainerExport:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ChartContainer.HasExport:hover >  .ChartContainerExport {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ChartTooltip {
+    background-color: inherit !important;
+    border: none;
+    box-shadow: none !important;
+}
+
+body[data-theme="dark"] {
+    .ChartContainerExport > svg {
+        fill: #FFF;
+    }
+}
